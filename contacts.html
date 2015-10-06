@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Vahrin</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css">
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+		<script type="text/javascript" src="js/jquery.placeholder.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script>
+		  function initialize() {
+				var mapCanvas = document.getElementById('map');
+				var mapOptions = {
+				  scrollwheel: false,
+				  mapTypeControl: false,				  
+				  center: new google.maps.LatLng(44.5403, -78.5463),
+				  zoom: 8,
+				  mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+				var map = new google.maps.Map(mapCanvas, mapOptions);
+				map.set('styles', [{"featureType":"landscape","stylers":[{"hue":"#FFBB00"},{"saturation":43.400000000000006},{"lightness":37.599999999999994},{"gamma":1}]},{"featureType":"road.highway","stylers":[{"hue":"#FFC200"},{"saturation":-61.8},{"lightness":45.599999999999994},{"gamma":1}]},{"featureType":"road.arterial","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":51.19999999999999},{"gamma":1}]},{"featureType":"road.local","stylers":[{"hue":"#FF0300"},{"saturation":-100},{"lightness":52},{"gamma":1}]},{"featureType":"water","stylers":[{"hue":"#0078FF"},{"saturation":-13.200000000000003},{"lightness":2.4000000000000057},{"gamma":1}]},{"featureType":"poi","stylers":[{"hue":"#00FF6A"},{"saturation":-1.0989010989011234},{"lightness":11.200000000000017},{"gamma":1}]}]);
+				// Lock Touch Dragging
+				if ( 'ontouchstart' in window || 'onmsgesturechange' in window ) map.setOptions({ draggable: false });
+			}
+		  google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+	</head>
+
+	<body>
+
+		<div id="top">
+			<div class="wrap">
+				<div class="phone">
+					<a href="tel:+7495345678">+7 495 345 678</a>
+				</div>
+				<div class="lang">
+					<a href="">eng</a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="header">
+			<div class="wrap">
+				<div class="logo">
+					<a href=""><img src="img/logo.svg" alt=""></a>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="index.html">главная</a></li>
+						<li><a href="services.html">УСЛУГИ</a></li>
+						<li><a href="portfolio.html">ПОРТФОЛИО</a></li>
+						<li><a href="">о нас</a></li>
+						<li class="active"><a href="contacts.html">КОНТАКТЫ</a></li>
+					</ul>
+				</div>
+				<div class="cleared"></div>
+			</div>
+		</div>
+		
+		<div id="banner" class="small contacts">
+			<ul>
+				<li>
+					<div class="wrap">	
+						<p>будем на связи</p>
+						<h1>Контакты</h1>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="headings">
+			<div class="wrap">
+				<p class="sub">ПОДЗАГОЛОВОК</p>
+				<h1>Еще одна строка заголовка</h1>
+				<p class="desc">We would love to hear from you! Give us a call at 0171/93 05 330 or drop by our office at Weißenseestr. 102 München, Germany</p>
+			</div>
+		</div>
+		
+		<div id="form">
+			<form>
+				<input class="name" type="text" placeholder="Name*"><input class="mail" type="text" placeholder="E-mail*">
+				<input class="subj" type="text" placeholder="Subject*">
+				<textarea placeholder="Message*"></textarea>
+				<button class="dark" type="submit">отправить сообщение</button>
+			</form>
+		</div>
+		
+		<div id="map"></div>	
+		
+		<div id="footer">
+			<div class="wrap">
+				<div class="logo">
+					<a href=""><img src="img/logo-dark.svg" alt=""></a>
+				</div>
+				<div class="social">
+					<div class="item"></div>
+					<div class="item"></div>
+					<div class="item"></div>
+				</div>
+				<div class="phone">
+					<a href="tel:+7495345678">+7 495 345 678</a>
+				</div>
+				<div class="callback">
+					<button class="dark">ПЕРЕЗВОНИТЕ МНЕ</button>
+				</div>
+				<div class="offer">
+					<div class="item">
+						<p><b>BRAND</b></p>
+						<ul>
+							<li>Создание бренда</li>
+							<li>Позиционирование</li>
+							<li>Брендинг</li>
+						</ul>
+					</div>
+					<div class="item">
+						<p><b>Design</b></p>
+						<ul>
+							<li>Логотип и фирменный стиль</li>
+							<li>Корпоративная полиграфия</li>
+							<li>Дизайн сайта</li>
+						</ul>
+					</div>
+					<div class="item">
+						<p><b>CREATIVE</b></p>
+						<ul>
+							<li>Креативные концепции</li>
+							<li>Видео и аудио сценарии</li>
+							<li>Копирайтинг</li>
+						</ul>
+					</div>				
+					<div class="item">
+						<p><b>Image</b></p>
+						<ul>
+							<li>3D визуализация</li>
+							<li>Релкамная фотосъемка</li>
+							<li>Видео и анимация</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="copyright">
+			<div class="wrap">
+				<p>2015. Copyright Vahrin webstudio</p>
+			</div>
+		</div>
+		
+	</body>
+
+</html>
