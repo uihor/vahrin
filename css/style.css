@@ -1152,10 +1152,10 @@ body {
 }
 
 @media screen and (min-width: 1900px) {
-	#banner li, #unser, #item1 .back-top, #item1 .back-bottom, #item3 .back, #picture, #picture2, #brandbook, #images .img1, #images .img2, #stand, #cocowell-link, #cocowell-back  {
+	#banner li, #unser, #item1 .back-top, #item1 .back-bottom, #item3 .back, #picture, #picture2, #brandbook, #images .img1, #images .img2, #stand, #cocowell-link, #cocowell-back, #service  {
 		background-size: 100% auto !important;
 	}
-	#banner li, #picture, #picture2, #images .img1, #images .img2, #cocowell-link, #cocowell-back  {
+	#banner li, #picture, #picture2, #images .img1, #images .img2, #cocowell-link, #cocowell-back, #service  {
 		background-position: center center;
 	}
 	#item3 .back {
